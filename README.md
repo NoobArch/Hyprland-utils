@@ -10,9 +10,9 @@ My config files for all the official hyprland utils I use.
 - Hyprshot (neither does this one)
 - All other necessary utils, which are anyway automatically downloaded and doesn't require config file
 
-## > [!WARNING]
-> I tweaked some of the basic Hyprland key bindings, don't use them without having read the bindings section of hyprland.lua .
-> I use an AZERTY keyboard, so the same goes for changing workspaces.
+> [!WARNING]
+> I tweaked some of the basic Hyprland key bindings, don't use them without having read the bindings section of hyprland.lua .\
+> I use an AZERTY keyboard, so the same goes for changing workspaces.\
 > My laptop has an Nvidia GPU, you may want to delete or comment the nvidia related environment variables if your computer does not have one.
 
 ## Dependencies
