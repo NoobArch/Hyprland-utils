@@ -16,7 +16,7 @@ My config files for all the official hyprland utils I use.
 > My laptop has an Nvidia GPU, you may want to delete or comment the nvidia related environment variables if your computer does not have one.
 
 ## Dependencies
-If you want to use this config optimally and without changing anything, you will need to use (or at least have downloaded) [Ghostty](https://ghostty.org/), [Rofi](https://github.com/davatorium/rofi), [Nemo](https://github.com/linuxmint/nemo), [Hyprshot](https://github.com/Gustash/hyprshot) (although I may switch soon if I can get flameshot to work) as well as the other Hyprland utils I use. Both my Ghostty and Rofi config can be found under NoobArch.
+If you want to use this config optimally and without changing anything, you will need to use (or at least have downloaded) [Ghostty](https://ghostty.org/), [Rofi](https://github.com/davatorium/rofi), [Nemo](https://github.com/linuxmint/nemo), [Flameshot](https://github.com/flameshot-org/flameshot) as well as the other Hyprland utils I use. Both my Ghostty and Rofi config can be found in the NoobArch organization.
 
 ## Usage hints
 The mainmod is the left Alt key.\

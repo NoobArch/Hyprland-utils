@@ -382,10 +382,8 @@ hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = tr
 hl.bind(mainMod .. " + CTRL + SPACE",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
 -- Screenshots
-hl.bind("CONTROL + SHIFT + Print", hl.dsp.exec_cmd("hyprshot-rs -m active -m window -r | satty --filename -"))
-hl.bind("SHIFT + Print", hl.dsp.exec_cmd("hyprshot-rs -m active -m window"))
-hl.bind("CONTROL + Print", hl.dsp.exec_cmd("hyprshot-rs -m region -r | satty --filename -"))
-hl.bind("Print", hl.dsp.exec_cmd("hyprshot-rs -m region -r"))
+-- Flameshot config, see https://github.com/flameshot-org/flameshot
+hl.bind("Print", hl.dsp.exec_cmd("flameshot gui"), { locked = true, repeating = false })
 
 -- Lid Control
 hl.bind("switch:Lid Switch", hl.dsp.exec_cmd("hyprlock & nmcli radio wifi on"), { locked = true })
@@ -448,4 +446,22 @@ hl.window_rule({
 
     move  = "monitor_v*0.5 monitor_h*0.5",
     float = true
+})
+
+hl.window_rule({
+    match       = { class = "flameshot" },
+    no_anim     = true,
+    pin         = true,
+    float       = true,
+    decorate    = false,
+    no_blur     = true,
+    no_shadow   = true,
+})
+hl.window_rule({
+    match   = { class = "flameshot", title = "flameshot" },
+    move    = { 0, 0 },
+})
+hl.window_rule({
+    match = { class = "flameshot", title = "flameshot-pin" },
+    move  = { "cursor_x-(window_w*0.5)", "cursor_y-(window_h*0.5)" },
 })
