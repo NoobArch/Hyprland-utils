@@ -383,8 +383,11 @@ hl.bind(mainMod .. " + CTRL + SPACE",  hl.dsp.exec_cmd("playerctl previous"),   
 
 -- Screenshots
 -- Flameshot config, see https://github.com/flameshot-org/flameshot
-hl.bind("Print", hl.dsp.exec_cmd("flameshot gui"), { locked = true, repeating = false })
-
+hl.bind("Print", function()
+    local mon = hl.get_active_monitor()
+    local n = mon and mon.id or 0
+    hl.exec_cmd("flameshot screen --number " .. n .. " --edit")
+end)
 -- Lid Control
 hl.bind("switch:Lid Switch", hl.dsp.exec_cmd("hyprlock & nmcli radio wifi on"), { locked = true })
 
