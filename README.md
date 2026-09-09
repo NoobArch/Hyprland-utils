@@ -7,7 +7,6 @@ My config files for all the official hyprland utils I use.
 - Hyprlock
 - Hyprpaper
 - Hyprshutdown (but this one doesn't use a config file)
-- Hyprshot (neither does this one)
 - All other necessary utils, which are anyway automatically downloaded and doesn't require config file
 
 > [!WARNING]
